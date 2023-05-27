@@ -1,0 +1,23 @@
+{
+    "name": "hostinger-task",
+    "version": "1.0.0",
+    "description": "QA task",
+    "main": "index.js",
+    "scripts": {
+        "format": "prettier --write .",
+        "lint": "eslint --fix .",
+        "test": "npx playwright test",
+        "test:ui": "npx playwright test --ui --project=chromium",
+        "test:headed": "npx playwright test --headed --project=chromium"
+    },
+    "author": "Karolis R",
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "@playwright/test": "^1.34.3",
+        "@typescript-eslint/eslint-plugin": "^5.16.0",
+        "crypto-random-string": "^5.0.0",
+        "eslint": "^8.12.0",
+        "prettier": "^2.6.1"
+    }
+}
